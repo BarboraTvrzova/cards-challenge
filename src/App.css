@@ -1,0 +1,85 @@
+.App {
+  margin: 0 auto;
+  max-width: 1110px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+  color: #4d4f62;
+  width: 540px;
+  margin: 0 auto;
+  height: 168px;
+}
+
+.heading h1 {
+  font-size: 36px;
+  font-weight: 200;
+  line-height: 54px;
+  letter-spacing: 0.25px;
+}
+
+.heading h1 span {
+  font-weight: 600;
+}
+
+.heading p {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.14167px;
+  opacity: 0.5;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.double {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 530px;
+  max-width: 350px;
+  width: 30%;
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .order {
+    order: 3;
+  }
+
+  .heading {
+    width: 311px;
+    height: 161px;
+  }
+
+  .heading h1 {
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 200;
+  }
+  .heading h1 span {
+    font-weight: 800;
+  }
+}
